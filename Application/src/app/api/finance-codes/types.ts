@@ -1,0 +1,36 @@
+export type FormCodeType = {
+    id: number;
+    formCode: string;
+    source: string;
+    budgetDept: string;
+    campaignCode: string | null;
+    freeholdCode: string | null;
+    eventCode: string | null;
+    subRegion: string;
+    bankAccount: string;
+    appealCode: string | null;
+    threeDPurchaseDescription: string | null;
+    allowRegularDonations: boolean;
+    heading1: string;
+    heading1Sub: string | null;
+    heading2: string;
+    paragraph: string;
+    rightHandColumn: string;
+    regularPaymentCampaignCode: string | null;
+    regularPaymentPromoCode: string | null;
+    approved: boolean;
+    approvedOn: Date | null;
+    approvedBy: string | null;
+    lastEditedOn: Date | null;
+    lastEditedBy: string | null;
+    deleted: boolean;
+    deletedOn: Date | null;
+    deletedBy: string | null;
+    allowOneOffDonations: boolean;
+    journeyId: number;
+    useCustomThankYouPage: boolean;
+    thankYouPageContent: string | null;
+    isFormCodeEditable: boolean;
+    allowEventDonations: boolean;
+    allowLegacyDonations: boolean;
+}

@@ -1,0 +1,20 @@
+$text-fonts-folder: '../../../fonts';
+
+@mixin font-face($family, $folder, $filename, $style:normal, $weight:normal, $display:swap) {
+    @font-face {
+      font-family: $family;
+      font-display: $display;
+      src: url("#{$folder}/#{$filename}.eot");
+      src: url("#{$folder}/#{$filename}.eot?#iefix") format("embedded-opentype"),
+           url("#{$folder}/#{$filename}.woff") format("woff"),
+           url("#{$folder}/#{$filename}.woff2") format("woff2"),
+           url("#{$folder}/#{$filename}.ttf") format("truetype");
+      font-style: $style;
+      font-weight: $weight;
+    }
+  }
+
+@include font-face('Macmillan Cera Pro Black', '#{$text-fonts-folder}/CeraProMacmillan', 'CeraProMacmillan-Black');
+@include font-face('Macmillan Cera Pro Bold', '#{$text-fonts-folder}/CeraProMacmillan', 'CeraProMacmillan-Bold');
+@include font-face('Macmillan Cera Pro Regular', '#{$text-fonts-folder}/CeraProMacmillan', 'CeraProMacmillan-Regular');
+
